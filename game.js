@@ -10,15 +10,7 @@ var started = false;
 
 
 
-$(document).keypress(function() {
 
-    if(!started) {
-
-        $("#level-title").text("level "+ level);
-        nextSequence();
-        started = true;
-    }
-});
 document.addEventListener("touchstart", function() {
     if(!started) {
 
