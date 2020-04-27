@@ -19,9 +19,7 @@ $(document).keypress(function() {
         started = true;
     }
 });
-
-$(document).click(function() {
-
+document.addEventListener("touchstart", function() {
     if(!started) {
 
         $("#level-title").text("level "+ level);
@@ -29,6 +27,7 @@ $(document).click(function() {
         started = true;
     }
 });
+
 
 
 $(".btn").click(function() {
@@ -82,6 +81,7 @@ function checkAnswer(currentLevel) {
     
     }
     else{
+        startOver();
 
         var audio = new Audio("sounds/wrong.mp3");
         audio.play();
@@ -93,7 +93,7 @@ function checkAnswer(currentLevel) {
 
         $("#level-title").text("Game Over, Press Any Key to Restart");
 
-        startOver();
+        
     }
 
 }
