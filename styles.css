@@ -14,14 +14,13 @@ body {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 325px;
+  width: 363px;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -52,12 +51,12 @@ body {
   background-color: grey;
 }
 
-@media (max-width: 660px){
-  body{
-    background-color: blue;
+@media (max-width: 360px){
+  .btn{
+    height: 337px;
+    width: 322px;
   }
-
-  #level-title{
-    color: black;
+  .container{
+    padding: 300px 0;
   }
 }
