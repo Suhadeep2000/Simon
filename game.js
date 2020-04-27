@@ -84,7 +84,7 @@ function checkAnswer(currentLevel) {
         }, 200);
 
         $("#level-title").text("Game Over, Press Any Key to Restart");
-        $("#level-title").css("margin","11%")
+        $("#level-title").css("font-size","60px");
         
     }
 
