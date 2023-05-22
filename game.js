@@ -11,7 +11,7 @@ var started = false;
 
 
 
-document.addEventListener("touchstart", function() {
+document.addEventListener("click", function() {
     if(!started) {
 
         $("#level-title").text("level "+ level);
